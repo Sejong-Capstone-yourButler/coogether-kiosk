@@ -105,43 +105,43 @@ void order()
   if (bc1 == 1)
   {
     lcd.setCursor(0,0);
-    lcd.print("치킨가라아게");
+    lcd.print("chicken");
     Serial.println("치킨가라아게");
   }
   else if (bc1 == 2)
   {
     lcd.setCursor(0,0);
-    lcd.print("모듬까스");
+    lcd.print("Assorted");
     Serial.println("모듬까스");    
   }
   else if (bc1 == 3)
   {
     lcd.setCursor(0,0);
-    lcd.print("치킨가라아게 모듬까스");
+    lcd.print("chicken Assorted");
     Serial.println("치킨가라아게 모듬까스");    
   }
   
   if (bc2 == 1)
   {
     lcd.setCursor(0,1);
-    lcd.print("안심까스");
+    lcd.print("Tenderloin");
     Serial.println("안심까스");
   }
   else if (bc2 == 2)
   {
     lcd.setCursor(0,1);
-    lcd.print("등심까스");
+    lcd.print("Sirloin");
     Serial.println("등심까스");
   }
   else if (bc2 == 3)
   {
     lcd.setCursor(0,1);
-    lcd.print("안심까스 등심까스");
+    lcd.print("Tenderloin Sirloin");
     Serial.println("안심까스 등심까스");
   }
   delay(3000);
   lcd.clear();
-  Serial.println("주문 완료"); // 파이썬에서 post 진행
+  Serial.println("Ordered."); // 파이썬에서 post 진행
   lcd.print("주문 완료");
   delay(2000);  
 }
